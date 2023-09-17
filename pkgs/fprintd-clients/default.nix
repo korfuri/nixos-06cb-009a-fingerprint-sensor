@@ -7,7 +7,7 @@
 { lib, stdenv
 , fetchFromGitLab
 , fetchpatch
-, pkgconfig
+, pkg-config
 , meson
 , ninja
 , perl
@@ -64,7 +64,7 @@ stdenv.mkDerivation rec {
   ];
 
   nativeBuildInputs = [
-    pkgconfig
+    pkg-config
     meson
     ninja
     perl
